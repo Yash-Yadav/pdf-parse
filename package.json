@@ -1,0 +1,22 @@
+{
+  "name": "pdf-parse",
+  "version": "1.0.0",
+  "description": "This is a sample for parsing a PDF via Node JS based package",
+  "main": "parse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yash-Yadav/pdf-parse.git"
+  },
+  "author": "Yash Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yash-Yadav/pdf-parse/issues"
+  },
+  "homepage": "https://github.com/Yash-Yadav/pdf-parse#readme",
+  "dependencies": {
+    "pdfreader": "^1.0.4"
+  }
+}
