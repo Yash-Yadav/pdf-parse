@@ -5,18 +5,18 @@ var pdfreader = require("pdfreader");
 const nbCols = 2;
 const cellPadding = 40; // each cell is padded to fit 40 characters
 const columnQuantitizer = item => parseFloat(item.x) >= 20;
- 
+
 const padColumns = (array, nb) =>
   Array.apply(null, { length: nb }).map((val, i) => array[i] || []);
 // .. because map() skips undefined elements
- 
+
 const mergeCells = cells =>
   (cells || [])
     .map(cell => cell.text)
     .join("") // merge cells
     .substr(0, cellPadding)
     .padEnd(cellPadding, " "); // padding
- 
+
 const renderMatrix = matrix =>
   (matrix || [])
     .map((row, y) =>
@@ -25,9 +25,9 @@ const renderMatrix = matrix =>
         .join(" | ")
     )
     .join("\n");
- 
+
 var table = new pdfreader.TableParser();
- 
+
 new pdfreader.PdfReader().parseFileItems("table.pdf", function(err, item) {
   if (!item || item.page) {
     // end of file, or page
