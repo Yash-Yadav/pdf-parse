@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Yash-Yadav/pdf-parse#readme",
   "dependencies": {
-    "pdfreader": "^1.0.4"
+    "pdfreader": "^3.0.8"
   }
 }
